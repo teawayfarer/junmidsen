@@ -1,11 +1,358 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>
-		Now u are web-developer!
-	</title>
+	<meta charset="UTF-8">
+	<title>Now u are frontend-developer!</title>
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+	<style type="text/css">
+		html, body{
+			font-family: Arial;
+			background-color: #71BFFF;
+		}
+		.blocks{
+			padding-top: 181px;
+			padding-bottom: 180px;
+			padding-left: 380px;
+			padding-right: 381px;
+			display: flex;
+  			justify-content:space-around;
+  			position: absolute;
+  			width: 1160px;
+  			height: 808px;
+
+		}
+		#left{
+			font-size: 25px;
+			font-weight: bold;
+		
+			background-color: #E1F4FF;
+			width: 580px;
+  			height: 808px;
+		}
+		#right{
+			background-color: #FFF;
+			width: 580px;
+  			height: 808px;
+  			display: flex;
+  			justify-content: center;
+  			flex-direction: column;
+		}
+		#rangespace{
+			padding-top: 90px;
+			padding-right: 40px;
+			padding-left: 40px;
+		}
+		#range_space{
+			background-color: #FFF;
+			width: 500px;
+			height: 312px;
+		}
+		#hero_body{
+			background-color: #FFF;
+			width: 240px;
+			height: 90px;
+		}
+		#herobody{
+			display: block;
+			float: left;
+			margin-top: 60px;
+			margin-bottom: 60px;
+			margin-left: 40px;
+		}
+		#hero_face{
+			background-color: #FFF;
+			width: 240px;
+			height: 90px;
+		}
+		#heroface{
+			display: block;
+			float: right;
+			margin-top: 60px;
+			margin-bottom: 60px;
+			margin-right: 40px;
+		}
+		.hero{
+
+		}
+		#quote{
+			margin-top: 40px;
+			margin-left: 40px;
+			padding-bottom: 40px;
+			font-weight: normal;
+			font-size: 16px;
+			font-family: Arial;
+		}
+		.stages{
+			display: inline-block;
+			width: 22%;
+			margin-left: 40px;
+			margin-bottom: 40.5px;
+			font-weight: normal;
+			font-size: 16px;
+		}
+		.bodys{
+			display: inline-block;
+			padding: 10px 4px 0 5px;
+		}
+		#face1{
+			padding-top: 20px;
+			display: inline-block;
+			padding-left: 10px;
+			margin: 0;
+		}
+		#face2{
+			padding-top: 25px;
+			display: inline-block;
+			padding-left: 3px;
+			margin: 0;
+		}
+	    #face3{
+	    	padding-top: 20px;
+			display: inline-block;
+			padding-left: 8px;
+			margin: 0;
+		}
+		.border:hover{
+			border: 2px solid #006BCC;
+			border-radius: 10px;
+		}
+		.border:active{
+			border: 2px solid #006BCC;
+			border-radius: 10px;
+		}
+		.heroes{
+			position: relative;	
+		}
+		.border{
+			  display: inline-block;
+			  margin-left: 15px;
+			  margin-top: 15px;
+			  margin-bottom: 15px;
+			  width: 53px;
+			  height: 55px;
+			  border: 2px solid #D6D6D6;
+			  border-radius: 10px;
+		}
+		#dev{
+			width: 354px;
+			height: 307,38px;
+			padding-bottom: 280.6px;
+			margin-left: 112px;
+			margin-right: 138px; 
+			margin-top: -60px;
+		}
+		#bluebody{
+			margin-top: -180px;
+			width:201px;
+			height: 276px
+			margin-bottom: 0;
+			margin-left: 187px;
+		}
+		#firstface{
+			z-index: 1;
+			width: 90.72px;
+			height: 53.57px;
+			margin-left: 242px;
+			padding-top: 250px;
+		}	
+		.smallskills{
+			margin-bottom: 12px;
+			margin-left: 10px;
+			max-width: 40px;
+			max-height: 28px;
+			flex-shrink: 1;
+		}
+		.midskills{
+			margin-left: 10px;
+			max-width: 40px;
+			max-height: 20px;
+			flex-shrink: 1;
+		}
+		.skills{
+			margin-left: 10px;
+			max-width: 78px;
+			height: 43px;
+			flex-shrink: 1;
+		}
+		.skill{
+			padding-left: 150px;
+			padding-top: 300px;
+			display: flex;
+			margin-bottom: 0;
+			justify-content: center;
+			flex-direction: column;		
+		}
+		.up{
+			margin-top: 8px
+		}
+		#one{
+			margin-bottom: -23px;
+			position: relative;
+		}
+		#two{
+			margin-top: 5px;
+			position: relative;
+		}
+		#three{
+			padding-left: 52px;
+			margin-top: 10px;
+			position: relative;
+		}
+		#wbpck{
+			margin: 0;
+			padding-left: 195px;
+		}
+		#adaptive{
+			max-width: 89px;
+			max-height: 33px
+		}
+		#pug{
+			max-height: 32px;
+		}
+		#git{
+			max-height: 25px;
+		}
+	
+		input[type="range"]{
+			margin-top: 60px;
+			margin-left: 40px;
+			width: 420px;
+			height: 4px;
+		}
+		input[type="range"]::-webkit-slider-runnable-track{
+			-webkit-appearance: none;
+			background: #D1E3F2;
+			height: 4px;
+		}
+		input[type=range]::-webkit-slider-thumb{
+		    -webkit-appearance: none;
+		    margin-top: -9px;
+		    border-radius: 8px;
+		    height: 7px;
+		    border: 1px solid #006BCC;
+		    background: #006BCC;
+		}
+		input[type=range]::-moz-range-track{
+			background: #D1E3F2;
+			height: 4px;
+		}
+		input[type=range]::-moz-range-thumb{
+			margin-top: -9px;
+		    border-radius: 8px;
+		    height: 7px;
+		    border: 1px solid #006BCC;
+		    background: #006BCC;
+		}
+	</style>
+	<script type="text/javascript">
+		function cnhgGrn(){
+				document.getElementById('bluebody').src="images/greenbody.png";
+		}
+		function cnghPrpl(){
+			document.getElementById('bluebody').src="images/purplebody.png";
+			this.style.bottom = "500px";
+		}
+		function cnghBlu(){
+			document.getElementById('bluebody').src="images/bluebody.png";
+		}
+		function cnghFace1(){
+			document.getElementById('firstface').src="images/Group 83.png";
+		}
+		function cnghFace2(){
+			document.getElementById('firstface').src="images/Group 86.png";
+		}
+		function cnghFace3(){
+			document.getElementById('firstface').src="images/Group 87.png";
+		}
+		function upgr(){
+			if(document.getElementById('rng').value<2){
+
+			}
+			else if(document.getElementById('rng').value > 2){
+
+			
+			}
+			else 
+			{
+	
+			}
+		}
+
+	</script>
 </head>
 <body>
+	<div class="blocks">
+		<div id="left">
+			<div id="rangespace">
+				<p>Грейды для frontend</p>
+				<div id="range_space">
+					<input type="range" min="1" max="3" step="1" id="rng" onchange="upgr()">
+					<div class="stages" id="jun">
+						Junior
+					</div>
+					<div class="stages" id="mid" style="text-align: center">
+						Middle
+					</div>
+					<div class="stages" id="sen" style="text-align: right">
+						Senior
+					</div>
+					<hr width= 420px>
+					
+					<div id="quote">
+						<br>
+						<img src="images/Group 5.png" width="19" height="11.66">
+						Переход на следующий грейд — улучшение <br>
+						качества кода и увеличение ответственности.
+					</div>
+				</div>
+			</div class="hero" >
+				<div id="herobody">
+					<p>Тело</p>
+					<div id="hero_body">
+						<div class="border"><img class="bodys" id="blue" src="images/Group 6.png" onclick="cnghBlu()"></div>
+						<div class="border"><img class="bodys" id="green" src="images/Group 7.png" onclick="cnhgGrn()"></div>
+						<div class="border"><img class="bodys" id="purple" style="padding-left: 9px" src="images/Group 8.png" onclick="cnghPrpl()"></div>
+					</div>
+				</div>
+				<div id="heroface">
+					<p>Лицо</p>
+					<div id="hero_face">
+						<div class="border"><img id="face1"  src="images/Group 10.png" style="  margin-bottom: 15px;" onclick="cnghFace1()"></div>
+						<div class="border"><img id="face2"  src="images/Group 13.png" style="  margin-bottom: 20px;" onclick="cnghFace2()"></div>
+						<div class="border"><img id="face3"  src="images/Group 14.png" style="  margin-bottom: 15px;"onclick="cnghFace3()" ></div>
+					</div>
+
+			</div>
+				
+				
+		</div>
+		<div id="right">
+			<div class="skill">
+				<div class="skillses" id="one">
+					<img class="skills" id="html" src="images/html.png">
+					<img class="midskills" id="gulp" src="images/gulp.png">
+					<img class="smallskills" id="sql" src="images/sql.png">
+				</div>
+				<img class="skills" id= "wbpck" src="images/webpack.png">
+				<div class="skillses" id="two">
+					<img class="skills up" id="adaptive" src="images/adaptive.png">
+					<img class="skills up" id="basejs" src="images/basejs.png">
+					<img class="smallskills" id="git" src="images/git.png">
+					<img class="skills" id="pug" src="images/pug.png">
+				</div>
+				<div class="skillses" id="three">
+					<img class="midskills" id="eslint" src="images/eslint.png">
+					<img class="skills" id="css" src="images/css.png">
+					<img class="smallskills" id="sass" src="images/sass.png">
+				</div>
+			</div>
+			<img class="heroes" id="firstface" src="images/Group 83.png">
+			 <img class="heroes" id="bluebody" src="images/bluebody.png">
+			 <img class="heroes" id="dev" src="images/table.png">
+		</div>
+	</div>
+	
+
 
 </body>
 </html>
